@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pibble The Movie</title>
+
+    <link rel="stylesheet" href="ejercicio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="hero">
+
+        <div class="imagen">
+            <img src="pibble.jpeg" alt="Pibble">
+        </div>
+
+        <div class="contenido">
+
+            <h1>Pibble The Movie</h1>
+
+            <p class="parrafo-one">
+                Disfruta tu vida we :3 SIUUUU
+            </p>
+
+            <h3>Tututut</h3>
+
+            <div class="caja-modelo">
+                Esta historia narra las increíbles aventuras de Pibble mientras
+                explora el mundo, conoce nuevos amigos y vive experiencias épicas.
+            </div>
+
+            <h3>Fecha de Estreno</h3>
+
+            <p>18/03/2027</p>
+
+            <button onclick="mostrarVideo()" class="btn-video">
+                Ver Video
+            </button>
+
+            <br><br>
+
+            <video id="videoPibble" width="600" controls style="display:none;">
+                <source src="Pibble.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+
+        </div>
+
+    </div>
+</header>
+
+<script>
+function mostrarVideo() {
+    const video = document.getElementById("videoPibble");
+    video.style.display = "block";
+    video.play();
+}
+</script>
+
+</body>
+</html>

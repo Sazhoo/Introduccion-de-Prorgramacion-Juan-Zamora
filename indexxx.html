@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos</title>
+</head>
+<body>
+
+    <h2>Agregar Juego</h2>
+
+    <form id="agregarJuego">
+
+        <input type="text" id="nombreJuego" placeholder="Nombre del juego" required>
+        <br><br>
+
+        <select id="consolaJuego" required>
+            <option value="">Seleccione una consola</option>
+            <option value="PS5">PlayStation 5</option>
+            <option value="Xbox">Xbox Series S</option>
+            <option value="Xbox">Xbox Series X</option>
+        </select>
+
+   
+    <select id="categoriaJuego" required>
+        <option value="">Seleccione una categoría</option>
+        <option value="Acción">Acción</option>
+        <option value="Disparos (FPS/TPS)">Disparos (FPS/TPS)</option>
+        <option value="Battle Royale">Battle Royale</option>
+        <option value="RPG">RPG</option>
+        <option value="Deportes">Deportes</option>
+        <option value="Aventura">Aventura</option>
+        <option value="Simulación">Simulación</option>
+        <option value="Carreras">Carreras</option>
+        <option value="Estrategia">Estrategia</option>
+        <option value="Sandbox / Construcción">Sandbox / Construcción</option>
+        <option value="Supervivencia">Supervivencia</option>
+        <option value="Terror">Terror</option>
+        <option value="Lucha">Lucha</option>
+        <option value="Indie">Indie</option>
+    </select>
+
+        <input type="number" id="precioJuego" placeholder="Precio" required>
+        <br><br>
+
+        <input type="number" id="stockJuego" placeholder="Stock" required>
+        <br><br>
+
+        <button type="submit">Agregar Juego</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Registro de Usuario</h2>
+
+    <form id="registro">
+
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <br><br>
+
+        <input type="email" id="correo" placeholder="Correo" required>
+        <br><br>
+
+        <input type="password" id="contraseña" placeholder="Contraseña" required>
+        <br><br>
+
+        <button type="submit">Registrarse</button>
+
+    </form>
+        </form>
+
+    <hr>
+
+    <h2>Pedidos</h2>
+
+    <form id="pedidoForm">
+
+        <input type="number" id="idUsuarioPedido" placeholder="ID Usuario" required>
+        <br><br>
+
+        <input type="number" id="totalPedido" placeholder="Total" required>
+        <br><br>
+
+        <button type="submit">Crear Pedido</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Detalle Pedido</h2>
+
+    <form id="detallePedidoForm">
+
+        <input type="number" id="idPedidoDetalle" placeholder="ID Pedido" required>
+        <br><br>
+
+        <input type="number" id="idJuegoDetalle" placeholder="ID Juego" required>
+        <br><br>
+
+        <input type="number" id="cantidadDetalle" placeholder="Cantidad" required>
+        <br><br>
+
+        <input type="number" id="precioUnitarioDetalle" placeholder="Precio Unitario" required>
+        <br><br>
+
+        <button type="submit">Agregar Detalle</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Pagos</h2>
+
+    <form id="pagoForm">
+
+        <input type="number" id="idPedidoPago" placeholder="ID Pedido" required>
+        <br><br>
+
+        <input type="text" id="metodoPago" placeholder="Método de Pago" required>
+        <br><br>
+
+        <input type="number" id="valorPago" placeholder="Valor" required>
+        <br><br>
+
+        <button type="submit">Registrar Pago</button>
+
+    </form>
+
+    <script src="codigo23.js"></script>
+    <script src="codigo24.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{ /*body, etiqueta, #para IDs y el .para una clase*/
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    font-weight: 150;
+    font-style: normal;
+}
+.hero{
+    background-image: url("purplee.png");/*../ para meterse en una carpeta adentro de otra*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-container{
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    text-shadow: 2px;
+
+}
+.btn-primario{
+    background-color: rgb(23, 23, 140);
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Cormorant Garamond", serif;
+    color: white;
+}
+.btn-primario:hover{
+    background-color: rgb(40, 40, 165);
+    transform:  translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}

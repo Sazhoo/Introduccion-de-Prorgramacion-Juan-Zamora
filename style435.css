@@ -1,0 +1,43 @@
+*{
+    font-size: 1rem;/*Permite calcular tamaño de letra*/
+}
+body {
+     background-color:rgb(7, 4, 4)/*background-color para añadir colores al fondo */
+} 
+
+p{
+    color: white /*Para Añadir color directamente a letras de parrafos*/
+}
+
+.style-p{/*para etiquetar cada parrafo para no cambiarle el color a todo*/
+    color:purple
+}
+
+h1{
+    color: white;
+    font-family: fantasy;
+}
+
+/*Selector de clase*/
+.titulo-secundario {
+    color: gold;
+    text-decoration: underline;
+}
+
+.test{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Selector de id*/
+#Parrafo-unico {
+    color: black;
+    background-color:gold;
+}
+
+.caja-modelo {
+    width: 50%;
+    background-color: orange;
+    border: 5px solid gray; /*el borde */
+    padding: 20px; /*espacio del fondo*/
+    margin: 4px 10px 40px 10px; /*El espacio que hay del espacio hacia afuera*/
+    border-radius: 25px; /*redondea esquinas*/
+}

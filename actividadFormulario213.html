@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <h2>Datos personales basicos</h2>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan">
+
+        <br><br> <!--Slato de linea-->
+        <label for="apellido">Apellidos</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ej: Perez">
+        <br><br>
+        <label for="correoUsuario">Correo electronico</label>
+        <input type="text" id="correoUsuario" name="email" placeholder="correo@ejemplo.com" required> <!--required (para que aparezca que esa informacion es obligatoria)-->
+    </form>
+
+    <form action="">
+        <h2>Informacion</h2>
+
+        <label for="Años_de_Experiencia">Años de Experiencia: </label>
+        <input type="number" id="Años_de_Experiencia" name="Años_de_Experiencia" min="0" max="50">
+        <br><br>
+        <label for="disponibilidad">Fecha disponibilidad: </label>
+        <input type="date" id="disponibilidad" name="fecha_disponibilidad">
+        <br><br>
+        <p>Nivel de estudio: </p>
+       <label for="Nivel_Estudio">¿Que nivel de estudio tienes?</label>
+        <select name="Nivel_Estudio" id="Nivel_Estudio"> <!--select (Listas desplegables)-->
+            <option value="">--Seleccione una opcion--</option>
+            <option value="Bc">Bachiller</option>
+            <option value="Tc">Tecnico</option>
+            <option value="Tg">Tecnologo</option>
+            <option value="Prf">Profesional</option>
+            <option value="Doc">Doctorado</option>
+            <option value="Sec">Secundaria</option>
+            <option value="Prm">Primaria</option>
+            <option value="Md">Media</option>
+        </select>
+        <br><br>
+        <label for="Nivel_Estudio">¿Que nivel de estudio tienes?</label>
+        <select name="Nivel_Estudio" id="Nivel_Estudio"> <!--select (Listas desplegables)-->
+            <option value="">--Seleccione una opcion--</option>
+            <option value="Bc">Bachiller</option>
+            <option value="Tc">Tecnico</option>
+            <option value="Tg">Tecnologo</option>
+            <option value="Prf">Javascr</option>
+            <option value="Doc">Java</option>
+            <option value="Sec">Python</option>
+            <option value="Prm">C#</option>
+            <option value="Md">Css</option>
+        </select>
+        <br><br>
+        <label for="mensaje"></label>
+        <textarea  id="mensaje" rows="8" cols="50" placeholder="Escribe Aqui..."></textarea>
+        <button type="submit">Enviar Formulario</button>
+        <button type="reset">Limpiar Formulario</button>
+    </form>
+</body>
+</html>

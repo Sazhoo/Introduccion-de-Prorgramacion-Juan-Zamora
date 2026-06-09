@@ -1,0 +1,35 @@
+
+body{
+    background-color: black;
+}
+.caja {
+    background-color: royalblue;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    width: 500px;
+    height: 500px;
+}
+h1{
+    color: black;
+    font-family:'Times New Roman';
+}
+h2{
+    color: black;
+    font-family:'Times New Roman';
+    background-color: white;
+}
+h3{
+    color: black;
+    font-family:'Times New Roman';
+    background-color: white;
+}
+p{
+    color: black;
+    font-family:'Times New Roman';
+    background-color: white;
+}
+.test{
+    font-family: Arial, Helvetica, sans-serif;
+}

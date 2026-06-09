@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <h2>Datos personales basicos</h2>
+
+        <label for="nombreUsuario">Nombre de usuario</label>
+        <input type="text" id="nombreUsuario" name="nombre" placeholder="Ej: Juan Perez">
+
+        <br><br> <!--Slato de linea-->
+
+        <label for="correoUsuario">Correo electronico</label>
+        <input type="text" id="correoUsuario" name="email" placeholder="correo@ejemplo.com" required> <!--required (para que aparezca que esa informacion es obligatoria)-->
+    </form>
+
+    <form action="">
+        <h2>Diferentes tipos de inputs</h2>
+
+        <label for="pass">Contraseña</label>
+        <input type="password" name="clave" id="pass">
+        <br><br>
+        <label for="edad">Edad: </label>
+        <input type="number" id="edad" name="edad" min="18" max="99">
+        <br><br>
+        <label for="nacimiento">Fecha nacimiento: </label>
+        <input type="date" id="nacimiento" name="fecha_nac">
+        <br><br>
+        <p>Selecciona tu plan: </p>
+        <input type="radio" id="planGratis" name="plan" value="gratis">
+        <label for="planGratis">Plan Gratis</label>
+        <input type="radio" id="planPro" name="plan" value="pro">
+        <label for="planGratis">Plan Pro</label>
+        <input type="radio" id="planPremium" name="plan" value="Premium">
+        <label for="planGratis">Plan Premium</label>
+        <br><br>
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto terminos y condiciones</label>
+        <br><br>
+        <br><br>
+        <button type="submit">Enviar Formulario</button>
+        <button type="reset">Limpiar Formulario</button>
+    </form>
+
+    <form action="">
+        <h2>Textarea y Selects</h2> 
+        <label for="pais">¿De que pais nos visitas?</label>
+        <select name="pais" id="pais"> <!--select (Listas desplegables)-->
+            <option value="">--SELECCIONE UNA OPCION--</option>
+            <option value="CO">Colombia</option>
+            <option value="AR">Argentina</option>
+            <option value="BR">Brazil</option>
+            <option value="CH">Chile</option>
+            <option value="PE">Peru</option>
+            <option value="EC">Ecuador</option>
+        </select>
+        <br><br>
+        <label for="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe aqui..."></label>
+    </form>
+</body>
+</html>

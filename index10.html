@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces HTML</title>
+    <link rel="stylesheet" href="css10.css">
+</head>
+<body>
+    <a href="index9.html" class="boton">Ir a la página 
+    de animación</a>
+
+    <button id="miBoton">Ir a otra pagina</button> <!-- para poner un boton que lleve a otra pagina  | el de abajo es la forma de javascript-->
+    <nav>
+        <ul>
+            <li><a href="Index 8.html">Index8</a> </li>
+            <li><a href="index2.html">index2</a></li>
+            <li><a href="indexCss123.html">indexCss123</a></li>
+        </ul>
+    </nav>
+    <script>
+        document.getElementById("miBoton").addEventListener("click", function(){window.location.href = "index9.html";})
+    </script>
+</body>
+</html>

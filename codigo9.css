@@ -1,0 +1,51 @@
+body {
+    background-color: lightblue;
+    transition: background-color 0.5s ease;
+}
+
+@media (max-width: 730px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+.tarjeta {
+    background-color: white;
+    border: 2px solid #333;
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+@media (max-width: 730px) {
+    .contenedor-servicios {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .tarjeta{
+        width: 100%;
+    }
+}
+@keyframes deslizarYAparecer {
+    0% {
+        opacity: 0;
+        transform:  translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.titulo-animado{
+    text-align: center;
+    color: darkblue;
+    /*Nombre de animacion | duracion | tipo de ritmo | retraso (Opcional) */
+   /* animation: deslizarYAparecer 1.5s ease-out;*/
+   animation: deslizarYAparecer 2s infinite;
+}

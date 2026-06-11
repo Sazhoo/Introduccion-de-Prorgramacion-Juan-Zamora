@@ -1,0 +1,32 @@
+.perfil {
+    background-color: rgb(197, 197, 197);
+    font-family: georgia;
+    width: 700px;
+    height: 700px;
+     display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 20px; /* Espacio entre imagen y texto */
+    border-color: black;
+    border-radius: 1%;
+    border: solid black;
+    
+}
+.perfil img {
+    width: 400px;
+    height: 380px;
+    animation: girarEntrada 1.2s ease-out;
+}
+@keyframes girarEntrada {
+    0% {
+        opacity: 0;
+        transform: translateX(-150deg) rotate(90deg);
+    }
+    100%{
+        opacity: 4;
+        transform: translateX(-150deg) rotate(90deg);
+    }
+}
+.title {
+    width: 100px;
+    height: 100px;
+}
